@@ -1,3 +1,7 @@
+# Auther: Makenzie Totushek
+# Date: 2/20/2026
+# Title: Math Quiz
+
 # Program #1: Kilometer Converter
 # Write a program that asks the user to enter a distance in kilometers, 
 # then converts that distance to miles.  The conversion formula is as follows:  
@@ -10,7 +14,7 @@ def kilometer_conversion(kilometers):
     ######################
     # WRITE YOUR CODE HERE
     ######################    
-
+    miles = kilometers * 0.6214
 
     # Return the variable to the calling function
     return miles
@@ -20,7 +24,9 @@ def kilometer_conversion(kilometers):
 #### conversion logic in the kilometer_conversion function
 if __name__ == '__main__':
     # Get User Input
-    print('in main')
+    # print('in main')
+    kilometers = float(input('Enter kilometers: '))
     # Call kilometer_conversion, don't forget to pass in the kilometer parameter!
-    
+    result = kilometer_conversion(kilometers)
     # Display the miles
+    print(f'The total is {result:.2f} miles')
